@@ -1,7 +1,29 @@
-venv/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
 .env
+
+# Database
 db.sqlite3
+
+# Static files (collected)
 staticfiles/
+
+# macOS
 .DS_Store
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+
