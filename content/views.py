@@ -9,8 +9,8 @@ from .serializers import (
 
 
 class GalleryListView(generics.ListAPIView):
-    """GET /gallery/ — returns all gallery images (most recent first)."""
-    queryset = Gallery.objects.all()
+    """GET /gallery/ — returns the 5 most recent gallery images."""
+    queryset = Gallery.objects.all()[:5]
     serializer_class = GallerySerializer
 
 
